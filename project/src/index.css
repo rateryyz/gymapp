@@ -1,0 +1,89 @@
+@import "@fontsource/bebas-neue";
+@import "@fontsource/montserrat";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #ff6b00;
+  --primary-dark: #cc5500;
+  --primary-light: #ff8533;
+  --background: #1a1a1a;
+  --surface: #2d2d2d;
+}
+
+body {
+  @apply bg-dark text-white font-montserrat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bebas-neue text-primary;
+}
+
+.btn-primary {
+  @apply bg-primary hover:bg-primary-dark text-white font-semibold py-2 px-4 rounded-lg transition-all duration-200 transform hover:scale-105;
+}
+
+.input-field {
+  @apply bg-dark-lighter border border-dark-light text-white rounded-lg px-3 py-2 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200;
+}
+
+.card {
+  @apply bg-dark-lighter rounded-xl shadow-lg p-6 border border-dark-light hover:border-primary/30 transition-all duration-200;
+}
+
+header {
+  @apply bg-dark text-white;
+}
+
+header .gymapp-logo {
+  @apply text-primary font-bebas-neue text-xl;
+}
+
+header .gymapp-logo span {
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-lighter;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/50 rounded-full hover:bg-primary transition-colors;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
