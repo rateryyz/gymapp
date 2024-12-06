@@ -34,7 +34,7 @@ Antes de executar o projeto, você deve garantir as configurações e ferramenta
 
 Caso ainda não tenha feito o clone, execute o comando abaixo para obter os arquivos:  
 
-git clone https://github.com/Rateryzz/seu-repositorio.git  
+git clone https://github.com/rateryyz/gymapp
 cd seu-repositorio  
 
 ### 2. Instale as dependências necessárias  
